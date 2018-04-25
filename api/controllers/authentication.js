@@ -22,6 +22,7 @@ module.exports.register = function (req, res) {
 };
 
 module.exports.login = function () {
+    console.log("Hey hey login");
     passport.authenticate('local', function (error, user, info) {
 
         // If Passport throws/catches an error

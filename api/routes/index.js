@@ -11,7 +11,7 @@ let ctrlProfile  = require('../controllers/profile');
 let ctrlAuth = require('../controllers/authentication');
 
 router.get('/profile',auth, ctrlProfile.profileRead); //user
-router.get('/', function(req, res) {
+router.get('/hei', function(req, res) {
     res.send("Hello World!");
 });
 
